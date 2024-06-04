@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    background-color: #fff; /* Default background color */
+}
+
+header {
+    color: #fff; /* White text for header */
+    text-align:left;
+    padding: 20px 0;
+}
+
+.hero {
+    background-color: #ffdd00; /* Bright yellow background for hero section */
+    background-image: url(gym.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero h2 {
+    margin: 0 0 20px 0;
+    color: #ffdd00; /* Yellow text for hero heading */
+}
+
+.join-btn {
+    background-color: #ffdd00; /* Yellow background for button */
+    color: #000000; /* Black text for button */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.learn-more {
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+    color: #ffdd00;
+    text-decoration: none;
+}
+
+
+.about, .learn-more, .services, .offer, .testimonials, .before-after {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: black;/* Black background for sections */
+    color: #fdfafa; /* White text color for sections */
+}
+
+
+
+.services .service {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+    box-sizing: border-box;
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonials .testimonial {
+    background-color: #000000; /* black background for testimonials */
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid #000000; /* black border for testimonials */
+}
+
+.testimonials .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.before-after h2{
+    color: #ffdd00;
+}
+
+footer {
+    background-color: #ffdd00; /* Yellow background for footer */
+    color: #000000; /* Black text for footer */
+    text-align: center;
+    padding: 20px;
+}
+
+footer address {
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .services .service, .testimonials .testimonial {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services .service, .testimonials .testimonial {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero h2, .join-btn, .learn-more {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .join-btn {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    .learn-more {
+        font-size: 1em;
+    }
+
+    .about, .services, .offer, .testimonials, .before-after {
+        padding: 30px 10px;
+    }
+}
+
